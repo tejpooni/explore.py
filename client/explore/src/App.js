@@ -7,8 +7,8 @@ const center = {
 
 const sports = () => {
   console.log("making the call for sports via client");
-   Axios.post("http://localhost:3001/sports",{
-     type: "sports"
+   Axios.post("http://localhost:5000/sports",{
+     type: "sportsFrontEnd"
    }).then((response) => {  
      console.log(response);
    });
@@ -16,8 +16,8 @@ const sports = () => {
 
 const entertainment = () => {
   console.log("making the call for entertainment via client");
-   Axios.post("http://localhost:3001/entertainment",{
-     type: "entertainment"
+   Axios.post("http://localhost:5000/entertainment",{
+     type: "entertainmentFrontEnd"
    }).then((response) => {  
      console.log(response);
    });
@@ -25,8 +25,8 @@ const entertainment = () => {
 
 const news = () => {
   console.log("making the call for news via client");
-   Axios.post("http://localhost:3001/news",{
-     type: "news"
+   Axios.post("http://localhost:5000/news",{
+     type: "newsFrontEnd"
    }).then((response) => {  
      console.log(response);
    });
@@ -34,8 +34,8 @@ const news = () => {
 
 const music = () => {
   console.log("making the call for music via client");
-   Axios.post("http://localhost:3001/music",{
-     type: "music"
+   Axios.post("http://localhost:5000/music",{
+     type: "musicFrontEnd"
    }).then((response) => {  
      console.log(response);
    });
@@ -43,8 +43,8 @@ const music = () => {
 
 const miscellanous = () => {
   console.log("making the call for miscellanous via client");
-   Axios.post("http://localhost:3001/miscellanous",{
-     type: "miscellanous"
+   Axios.post("http://localhost:5000/miscellanous",{
+     type: "miscellanousFrontEnd"
    }).then((response) => {  
      console.log(response);
    });
