@@ -1,3 +1,4 @@
+import random
 import webbrowser
 from flask import Flask
 from flask_cors import CORS
@@ -11,13 +12,19 @@ CORS(app)
 
 @app.route("/sports", methods = ["POST"])
 def sendSport():
-    webbrowser.open('http://nba.com')
+    # webbrowser.open('http://nba.com')
+    sportslist = open("sports/sports.txt", "r")
+    url = sportslist.readlines()
+    url2 = random.choice(url)
+    newurl = url2[0:len(url2)-1]
+    webbrowser.open(newurl)
     return 'sports'
+
 
 @app.route("/entertainment", methods = ["POST"])
 def sendEnt():
     webbrowser.open('http://facebook.com')
-    return 'ent'
+    return 'ent.txt'
 
 @app.route("/news", methods = ["POST"])
 def sendNews():
