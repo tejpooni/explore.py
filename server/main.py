@@ -28,7 +28,12 @@ def sendEnt():
 
 @app.route("/news", methods = ["POST"])
 def sendNews():
-    webbrowser.open('http://cbc.ca')
+    # webbrowser.open('http://cbc.ca')
+    newslist = open("news/news.txt", "r")
+    url = newslist.readlines()
+    url2 = random.choice(url)
+    newurl = url2[0:len(url2)-1]
+    webbrowser.open(newurl)
     return 'news'
 
 @app.route("/music", methods = ["POST"])
