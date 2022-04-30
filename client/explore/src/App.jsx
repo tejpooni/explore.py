@@ -57,7 +57,7 @@ const music = () => {
    });
 };
 
-const miscellanous = () => {
+const miscellaneous = () => {
   console.log("making the call for miscellanous via client");
    Axios.post("http://localhost:5000/miscellanous",{
      type: "miscellanousFrontEnd"
@@ -152,7 +152,7 @@ function App() {
         <Card.Text>
           As the name suggest this option is rather ambiguous click for a pleasant surprise... 
         </Card.Text>
-      <Button variant="primary" onClick={miscellanous}>Miscellanous</Button>
+      <Button variant="primary" onClick={miscellaneous}>Miscellaneous</Button>
       </Card.Body>
       </Card>  
 
