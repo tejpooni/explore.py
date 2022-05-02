@@ -1,3 +1,14 @@
+Full Stack web Application
+Tech Stack: React Frontend + styled with bootstrap / Python backend with Flask 
+
+Description:
+- Simple application to use when one is not sure what content they are looking to consume.  
+    - 5 categories News/Sports/Entertainment/Music/Miscellanous
+    - User clicks on any one of the 5 categories and is taken to a specific website related to the niche that they selected
+      eg) one selects music and a youtube video of some random song may appear or even a lyric breakdown on genius 
+      eg2) one selects news and may be taken to cbc or Fox news etc...
+      This is the pattern for the other options as well 
+
 How to run our program locally, in both mac/linux or windows:
 MAC/linux (UNIX):
 Open up the program in your IDE of choice. Make sure you have python and node.js installed.
